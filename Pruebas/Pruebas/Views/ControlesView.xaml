@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pruebas.Views.ControlesView">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Margin="10">
+                <Label Text="Grid" HorizontalOptions="Center"/>
+                <Grid BackgroundColor="Beige">
+                    <Grid.ColumnDefinitions>
+                        <!-- Columna 1-->
+                        <ColumnDefinition/>
+                        <!-- Columna 2-->
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <!-- Fila 1-->
+                        <RowDefinition/>
+                        <!-- Fila 2-->
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Fila 1-->
+                    <BoxView Color="Red"
+                 HorizontalOptions="Center"/>
+                    <BoxView Color="Red"
+                 HorizontalOptions="Center" Grid.Column="1"/>
+                    <!-- Fila 2-->
+                    <Label Text="Columna 1(0) Fila 2(1)" Grid.Row="1"/>
+                    <Label Text="Columna 2(0) Fila 2(1)" Grid.Row="1" Grid.Column="1"/>
+                </Grid>
+                <Label Text="Button"/>
+                <Button Text="Pinchame"/>
+
+                <Label Text="Stepper"/>
+                <Stepper Minimum="0" Maximum="100" Increment="10"/>
+
+                <Label Text="Switch"/>
+                <Switch IsToggled="True"/>
+
+                <Label Text="DatePicker"/>
+                <DatePicker/>
+
+                <Label Text="TimePicker"/>
+                <TimePicker/>
+
+                <Label Text="ProgressBar"/>
+                <ProgressBar/>
+
+                <Label Text="ActivityIndicator"/>
+                <ActivityIndicator IsRunning="True"/>
+
+                <Label Text="Image"/>
+                <Image Source="http://pooplife.mx/static/shitlife/img/logo.png"/>
+
+                <Label Text="Entry"/>
+                <Entry/>
+
+                <Label Text="Editor"/>
+                <Editor/>
+
+                <Label Text="SearchBar"/>
+                <SearchBar />
+
+                <Label Text="Picker"/>
+                <Picker>
+                    <Picker.Items>
+                        <x:String>Uno</x:String>
+                        <x:String>Dos</x:String>
+                    </Picker.Items>
+                </Picker>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
