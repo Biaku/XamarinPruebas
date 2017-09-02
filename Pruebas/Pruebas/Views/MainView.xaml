@@ -11,6 +11,8 @@
                     Command="{Binding IrControles}"/>
             <Button Text="ListView"
                     Command="{Binding IrListView}"/>
+            <Button Text="HttpClientDemo"
+                    Command="{Binding IrHttpClientDemo}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -33,11 +33,14 @@ namespace Pruebas.ViewModels
 
         public ICommand IrControles { get; }
         public ICommand IrListView { get; }
+        public ICommand IrHttpClientDemo { get; }
 
         public MainViewModel()
         {
             IrControles = new Command(NavegarMain);
             IrListView = new Command(NavegarList);
+            IrHttpClientDemo = new Command(HttpClient);
+
         }
 
         private async void NavegarMain()
@@ -47,6 +50,10 @@ namespace Pruebas.ViewModels
         private async void NavegarList()
         {
             await App.Current.MainPage.Navigation.PushAsync(new ListaView());
+        }
+        private async void HttpClient()
+        {
+            await App.Current.MainPage.Navigation.PushAsync(new HttpClientDemo());
         }
     }
 }
